@@ -1,0 +1,169 @@
+Raw data
+
+it's written at
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+about the raw data:
+The experiments have been carried out with a group of 30 volunteers 
+within an age bracket of 19-48 years. Each person performed six activities 
+(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded
+accelerometer and gyroscope, we captured 3-axial linear acceleration and 
+3-axial angular velocity at a constant rate of 50Hz. The experiments have 
+been video-recorded to label the data manually. The obtained dataset has
+been randomly partitioned into two sets, where 70% of the volunteers was 
+selected for generating the training data and 30% the test data. 
+
+Task performed on the data
+
+We have extracted only mean and standard deviation
+for each mesurement. 
+We calculate the mean of these mesurement by subjet 
+and by activity.
+So the values contain in the tidy_data are the average of 
+mean and standard deviation for each couple of subject and
+activity
+
+Variables are about time and frequency domain. That's 
+indicated in the names of variables by "Fromtime" and "frequency"
+
+
+
+1 subject_id : number that identify the subject involve in the study.
+               There are thirty personns so the number is from 1 to 30
+            
+2 activity   : name of the activity perform in the study. there are 
+               six activities
+            1  WALKING  
+            2 WALKING_UPSTAIRS   
+            3 WALKING_DOWNSTAIRS 
+            4 SITTING  
+            5 STANDING
+            6 LAYING 
+            
+
+The linear acceleration has two components: the body acceleration and the gravity
+
+Body accelaration:
+
+3  mean.BodyAccelaration.Fromtime.X : mean of body linear acceleration  on the X direction                               
+4  mean.BodyAccelaration.Fromtime.Y :mean of body linear acceleration  on the Y direction                                    
+5  mean.BodyAccelaration.Fromtime.Z :mean of body linear acceleration  on the Z direction  
+
+6  standardDeviation.BodyAccelaration.Fromtime.X: standard deviation of body linear acceleration  on the X direction                        
+7  standardDeviation.BodyAccelaration.Fromtime.Y: standard deviation of body linear acceleration  on the Y direction                        
+8  standardDeviation.BodyAccelaration.Fromtime.Z: standard deviation of body linear acceleration  on the Z direction            
+Body accelearation:
+
+9  mean.GravityAccelaration.Fromtime.X: mean of gravity acceleration  on the X direction                                   
+10 mean.GravityAccelaration.Fromtime.Y: mean of gravity acceleration  on the Y direction                                  
+11 mean.GravityAccelaration.Fromtime.Z: mean of gravity acceleration  on the Z direction                                 
+12 standardDeviation.GravityAccelaration.Fromtime.X: standard deviation of gravity acceleration  on the X direction                     
+13 standardDeviation.GravityAccelaration.Fromtime.Y: standard deviation of gravity acceleration  on the Y direction                  
+14 standardDeviation.GravityAccelaration.Fromtime.Z: standard deviation of gravity acceleration  on the Z direction 
+
+Derived from body accelaration:
+
+15 mean.JerkFromBodyAccelaration.Fromtime.X: mean of jerk from body linear acceleration on the X direction                              
+16 mean.JerkFromBodyAccelaration.Fromtime.Y: mean of jerk from body linear acceleration on the Y direction                                
+17 mean.JerkFromBodyAccelaration.Fromtime.Z: mean of jerk from body linear acceleration on the Z direction                               
+18 standardDeviation.JerkFromBodyAccelaration.Fromtime.X: standard deviation 
+                    of jerk from body linear acceleration on the X direction                 
+19 standardDeviation.JerkFromBodyAccelaration.Fromtime.Y: standard deviation
+                    of jerk from body linear acceleration on the Y direction                  
+20 standardDeviation.JerkFromBodyAccelaration.Fromtime.Z: standard deviation 
+                  of jerk from body linear acceleration on the Z direction   
+
+
+Angular velocity:
+
+Body angular velocity:
+
+21 mean.BodyAngularVelocity.Fromtime.X: mean of body angular velocity on
+                                        the X direction                                    
+22 mean.BodyAngularVelocity.Fromtime.Y: mean of body angular velocity on 
+                                        the Y direction                                    
+23 mean.BodyAngularVelocity.Fromtime.Z: mean of body angular velocity on 
+                                        the Z direction                                     
+24 standardDeviation.BodyAngularVelocity.Fromtime.X: standard deviation of
+                                  body angular velocity on the X direction                        
+25 standardDeviation.BodyAngularVelocity.Fromtime.Y: standard deviation of 
+                                body angular velocity on the Y direction                        
+26 standardDeviation.BodyAngularVelocity.Fromtime.Z: standard deviation of 
+                              body angular velocity on the Z direction                        
+27 mean.JerkFromBodyAngularVelocity.Fromtime.X: mean of jerk from body 
+                                    angular velocity on the X direction                             
+28 mean.JerkFromBodyAngularVelocity.Fromtime.Y: mean of jerk from body 
+                                  angular velocity on the Y direction                             
+29 mean.JerkFromBodyAngularVelocity.Fromtime.Z: mean of jerk from body
+                                  angular velocity on the Z direction                             
+30 standardDeviation.JerkFromBodyAngularVelocity.Fromtime.X: standard deviation
+of jerk from body angular velocity on the X direction                
+31 standardDeviation.JerkFromBodyAngularVelocity.Fromtime.Y: standard deviation
+                  of jerk from body angular velocity on the Y direction                
+32 standardDeviation.JerkFromBodyAngularVelocity.Fromtime.Z: standard deviation
+                          of jerk from body angular velocity on the Z direction  
+
+Magnitude
+
+33 mean.Magnitude.BodyAccelaration.Fromtime : mean of magnitude of body 
+                                              linear acceleration                            
+34 standardDeviation.Magnitude.BodyAccelaration.Fromtime : standard deviation
+                                    of magnitude of body linear acceleration                
+35 mean.Magnitude.GravityAccelaration.Fromtime: mean of magnitude of gravity
+                                              linear acceleration                          
+36 standardDeviation.Magnitude.GravityAccelaration.Fromtime: standard deviation
+                                    of magnitude of gravity linear acceleration             
+37 mean.Magnitude.JerkFromBodyAccelaration.Fromtime:mean of magnitude of jerk
+                                                from body linear acceleration                        
+38 standardDeviation.Magnitude.JerkFromBodyAccelaration.Fromtime:
+                deviation of magnitude of jerk from body linear acceleration           
+39 mean.magnitude.BodyAngularVelocity.Fromtime: mean of magnitude of body
+                                                  angular velocity                          
+40 standardDeviation.magnitude.BodyAngularVelocity.Fromtime: standard deviation
+                                    of magnitude of body angular velocity              
+41 mean.magnitude.JerkFromBodyAngularVelocity.Fromtime: mean of magnitude of
+                                          jerk from body angular velocity                     
+42 standardDeviation.magnitude.JerkFromBodyAngularVelocity.Fromtime: standard
+                  deviation of magnitude of jerk from body angular velocity   
+
+
+frequency:
+
+43 mean.frequencyOfBodyAccelaration.X : mean of body linear acceleration(frequency)  on the X direction                        
+44 mean.frequencyOfBodyAccelaration.Y : mean of body linear acceleration(frequency)  on the Y direction                       
+45 mean.frequencyOfBodyAccelaration.Z : mean of body linear acceleration(frequency)  on the Z direction                       
+46 standardDeviation.frequencyOfBodyAccelaration.X: standard deviation of body linear acceleration(frequency)  on the X direction           
+47 standardDeviation.frequencyOfBodyAccelaration.Y: standard deviation of body linear acceleration(frequency)  on the Y direction           
+48 standardDeviation.frequencyOfBodyAccelaration.Z: standard deviation of body linear acceleration(frequency)  on the Z direction          
+
+derived from body acceleration frequency:
+
+49 mean.frequencyOfJerkFromBodyAccelaration.X : mean of jerk from body linear acceleration(frequency)  on the X direction               
+50 mean.frequencyOfJerkFromBodyAccelaration.Y : mean of jerk from body linear acceleration(frequency)  on the Y direction               
+51 mean.frequencyOfJerkFromBodyAccelaration.Z : mean of jerk from body linear acceleration(frequency)  on the Z direction               
+52 standardDeviation.frequencyOfJerkFromBodyAccelaration.X : standard deviation of jerk from body linear acceleration(frequency)  on the X direction   
+53 standardDeviation.frequencyOfJerkFromBodyAccelaration.Y : standard deviation of jerk from body linear acceleration(frequency)  on the Y direction   
+54 standardDeviation.frequencyOfJerkFromBodyAccelaration.Z : standard deviation of jerk from body linear acceleration(frequency)  on the Z direction   
+
+Body angular velocity frequency:
+
+55 mean.frequencyOfBodyAngularVelocity.X : mean of body angular velocity(frequency)  on the X direction                     
+56 mean.frequencyOfBodyAngularVelocity.Y : mean of body angular velocity(frequency)  on the Y direction                     
+57 mean.frequencyOfBodyAngularVelocity.Z : mean of body angular velocity(frequency)  on the Z direction                     
+58 standardDeviation.frequencyOfBodyAngularVelocity.X : standard deviation of body angular velocity(frequency)  on the X direction        
+59 standardDeviation.frequencyOfBodyAngularVelocity.Y : standard deviation of body angular velocity(frequency)  on the Y direction        
+60 standardDeviation.frequencyOfBodyAngularVelocity.Z : standard deviation of body angular velocity(frequency)  on the Z direction        
+
+Body linear acceleration frequency:
+
+61 mean.Magnitude.frequencyOfBodyAccelaration : mean of magnitude of body linear acceleration(frequency)             
+62 standardDeviation.Magnitude.frequencyOfBodyAccelaration : standard deviation of magnitude of body linear acceleration(frequency)
+
+The names below are from the raw data. The repetition of body make them difficult to understand
+
+63 fBodyBodyAccJerkMag.mean                                             
+64 fBodyBodyAccJerkMag.std                                             
+65 fBodyBodyGyroMag.mean                                               
+66 fBodyBodyGyroMag.std                                                 
+67 fBodyBodyGyroJerkMag.mean                                           
+68fBodyBodyGyroJerkMag.std 
