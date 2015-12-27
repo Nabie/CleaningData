@@ -1,7 +1,7 @@
 # in both directory test and train y is activity
 # subject is the subject_id involve in the activity
 # both directory are in the working directory
-setwd("./Coursera")
+#setwd("./Coursera")
 
 # put together information about the train
 
